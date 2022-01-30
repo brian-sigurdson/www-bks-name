@@ -2,17 +2,19 @@ body {
     background-color: #cce7ff;
 }
 
-table {
+table, tr, th, td {
     background-color: aliceblue;
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 5px;
+    margin: 5px;
 }
 
-tr, th, td {
-    border: 1px solid black;
-    padding: 5px;
-    /*margin: 20px;*/
-}
+/*tr, th, td {*/
+/*    border: 1px solid black;*/
+/*    padding: 5px;*/
+/*    !*margin: 20px;*!*/
+/*}*/
 
 /*th {*/
 /*    !*font-family: Arial;*!*/
