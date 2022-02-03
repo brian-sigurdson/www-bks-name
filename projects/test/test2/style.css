@@ -7,7 +7,7 @@ html, body {
 
 html {
     font-size: 10px;
-    background-color: #a9a9a9;
+    background-color: black;
 }
 
 body {
@@ -22,9 +22,14 @@ h1, h2, h3 {
     color: #2a2a2a;
 }
 
-p, input, li {
+p, li {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #2a2a2a;
+}
+
+p, li {
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 h1 {
@@ -43,21 +48,17 @@ h3 {
     font-size: 2.2rem;
 }
 
-p, li {
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
 /* || header layout */
 
-nav, article, aside, footer {
+nav, section, aside {
     background-color: white;
     padding: 1%;
 }
 
 nav {
     height: 50px;
-    background-color: #ff80ff;
+    /*background-color: #ff80ff;*/
+    background-color: darkgrey;
     display: flex;
     margin-bottom: 10px;
 }
@@ -83,30 +84,13 @@ nav a {
     color: black;
 }
 
-nav form {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 0 2em;
-}
-
-input {
-    font-size: 1.6rem;
-    height: 32px;
-}
-
-input[type="search"] {
-    flex: 3;
-}
-
-input[type="submit"] {
-    flex: 1;
-    margin-left: 1rem;
-    background: #333;
-    border: 0;
-    color: white;
-}
+/*nav form {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    height: 100%;*/
+/*    padding: 0 2em;*/
+/*}*/
 
 /* || main layout */
 
@@ -114,14 +98,17 @@ main {
     display: flex;
 }
 
-article {
+section {
     flex: 4;
+    background-color: aliceblue;
 }
 
 aside {
     flex: 1;
-    margin-left: 10px;
-    background-color: #ff80ff;
+    /*margin-left: 10px;*/
+    margin-right: 10px;
+    /*background-color: #ff80ff;*/
+    background-color: darkgrey;
 }
 
 aside li {
@@ -130,4 +117,8 @@ aside li {
 
 footer {
     margin-top: 10px;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    font-size: 1.5em;
 }
