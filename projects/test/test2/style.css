@@ -58,7 +58,9 @@ nav, section, aside {
 nav {
     height: 50px;
     /*background-color: #ff80ff;*/
-    background-color: darkgrey;
+    /*background-color: #1a94ff;*/
+    /*coolors*/
+    background-color: #363946;
     display: flex;
     margin-bottom: 10px;
 }
@@ -81,7 +83,7 @@ nav a {
     font-size: 2rem;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 /*nav form {*/
@@ -100,7 +102,10 @@ main {
 
 section {
     flex: 4;
-    background-color: aliceblue;
+    /*background-color: #ffcc99;*/
+    /*coolors
+    background-color: #819595;*/
+    background-color: #acb9b9;
 }
 
 aside {
@@ -108,11 +113,21 @@ aside {
     /*margin-left: 10px;*/
     margin-right: 10px;
     /*background-color: #ff80ff;*/
-    background-color: darkgrey;
+    /* coolors
+    background-color: #696773; */
+    background-color: #888593;
 }
 
 aside li {
     padding-bottom: 10px;
+}
+
+aside a {
+    display: inline-block;
+    font-size: 2rem;
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+    /*color: white;*/
 }
 
 footer {
