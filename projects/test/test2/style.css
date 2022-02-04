@@ -63,6 +63,7 @@ nav {
     background-color: #363946;
     display: flex;
     margin-bottom: 10px;
+    /*position: fixed;*/
 }
 
 nav ul {
@@ -132,8 +133,13 @@ aside a {
 
 footer {
     margin-top: 10px;
-    background-color: black;
+    background-color: #363946;
     padding: 1%;
     color: white;
     font-size: 1.5em;
 }
+
+/* create a fixed top menu */
+/*.navbar {*/
+/*    position: fixed;*/
+/*}*/
