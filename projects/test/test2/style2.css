@@ -151,9 +151,9 @@ section {
 
 aside {
     /* I tried to add to fix the aside, but it isn't so simple and I don't think it is worth spending more time on now */
-     */
     /*position: fixed;*/
     /*height: 100%;*/
+    /*padding-top: 175px;*/
 
     flex: 1;
     margin-right: 10px;
