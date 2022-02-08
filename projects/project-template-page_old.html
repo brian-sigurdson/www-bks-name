@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Brian Sigurdson">
+    <meta name="description" content="The personal web site project of Brian K. Sigurdson.">
+
+    <!-- for when I'm ready to start incorporating js-->
+    <!-- <script src="my-js-file.js" defer></script>-->
+
+    <title>Project Page Template</title>
+
+    <!-- just playing round with styles below.  I'll move it all into a style sheet when done. -->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link href="../style.css" rel="stylesheet" />
+    <style>
+        /*I copied this from htm ws act_2.01 as a starting point*/
+        header {
+            background: #659494;
+            border-radius: 5px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        section {
+            background: orange;
+            border: 5px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: black;
+            border: 5px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: .75em;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: orange;
+        }
+        h2 {
+            color: black;
+        }
+        .site-nav {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .page-nav {
+            background: red;
+            border: 5px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 1em;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<p><strong>NOTE:</strong></p>
+<p>I think that the page layout I have for masters project may be a good starting point.</p>
+<p>Present the most important information first:  name, desc, tech, results, diagram, video, Images?, Code, Other,
+    What I learned / thoughts / etc (essentially my blog post)</p>
+<p>I think that this will be adequate for now.  Over time, I can improve the look and feel, <strong>BUT</strong>
+    I need to stay focused on developing / polishing skills for a job search.</p>
+
+
+    <header class="page-header">
+        <h1>Automate what matters!</h1>
+    </header>
+
+    <nav class="site-nav">
+        <p>(site navigation) home page | projects | contact | other?</p>
+    </nav>
+    <h2>Project Name</h2>
+
+    <section>
+        <nav class="page-nav">
+            <p>(page navigation)
+                <a href="#description">Description</a><br>
+                <a href="#technology">Technology</a><br>
+                <a href="#results">Results</a><br>
+                <a href="#diagram">Diagram</a><br>
+                <a href="#video">Video</a><br>
+                <a href="#images">Images</a><br>
+                <a href="#code">Code</a><br>
+                <a href="#write-up">Write-up</a><br>
+            </p>
+        </nav>
+    </section>
+
+    <!-- just playing around with section stuff -->
+    <section id="page-content">
+        <span>
+            <section id="description">
+                <h3>Description</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+            </section>
+        </span>
+        <span>
+            <section id="technology">
+                <h3>Technology Used</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                    anim id est laborum.
+                </p>
+            </section>
+        </span>
+    </section>
+
+
+
+    <section id="results">
+        <h3>Results</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </section>
+
+    <section id="diagram">
+        <h3>Diagram</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </section>
+
+    <section id="video">
+        <h3>Video</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </section>
+
+    <section id="images">
+        <h3>Images</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </section>
+
+    <section id="code">
+        <h3>Code</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </section>
+
+    <section id="write-up">
+        <h3>Write-up</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+        </p>
+    </section>
+
+    <footer>
+        <p>©2022 Brian Sigurdson</p>
+    </footer>
+</body>
+</html>
