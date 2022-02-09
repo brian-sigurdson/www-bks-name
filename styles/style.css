@@ -72,7 +72,7 @@ nav {
     margin-bottom: 10px;
 }
 
-/* ################################### */
+/* ##################################################################### */
 /* this section makes the header fixed */
 /*
     I'm not sure that this is the best way to do it, but it seems reasonable.
@@ -80,16 +80,16 @@ nav {
     displays properly, I think I can keep it an move on.
     There are too many other things I need to be getting onto.
  */
-header {
-    /* from fixed menu */
-    position: fixed;
-    width: 70%;
-    background-color: black;
-}
+/*header {*/
+/*    !* from fixed menu *!*/
+/*    position: fixed;*/
+/*    width: 70%;*/
+/*    background-color: black;*/
+/*}*/
 
-.page-content, aside {
-    padding-top: 175px;
-}
+/*.page-content, aside {*/
+/*    padding-top: 175px;*/
+/*}*/
 
 /* from fixed menu */
 /*.navbar {*/
@@ -99,7 +99,7 @@ header {
 /*    top: 0;*/
 /*    width: 100%;*/
 /*}*/
-/* ################################### */
+/* ##################################################################### */
 
 nav ul {
     padding: 0;
