@@ -80,16 +80,20 @@ nav {
     displays properly, I think I can keep it an move on.
     There are too many other things I need to be getting onto.
  */
-header {
-    /* from fixed menu */
-    position: fixed;
-    width: 70%;
-    background-color: black;
-}
+/*
+ This this commented out for now, because it creates problems for the aside links on project pages.
+ The padding-top: 175px seems to be the problem and I don't want to get side-tracked with it right now
+ */
+/*header {*/
+/*    !* from fixed menu *!*/
+/*    position: fixed;*/
+/*    width: 70%;*/
+/*    background-color: black;*/
+/*}*/
 
-.page-content, aside {
-    padding-top: 175px;
-}
+/*.page-content, aside {*/
+/*    padding-top: 175px;*/
+/*}*/
 
 /* from fixed menu */
 /*.navbar {*/
