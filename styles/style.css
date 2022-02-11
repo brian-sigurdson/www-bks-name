@@ -92,7 +92,8 @@ nav {
 /*}*/
 
 /*.page-content, aside {*/
-/*    padding-top: 175px;*/
+/*    !*padding-top: 175px;*!*/
+/*    margin-top: 175px;*/
 /*}*/
 
 /* from fixed menu */
