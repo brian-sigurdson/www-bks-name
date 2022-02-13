@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body onload="updateVisitorCount()">
     <header class="navbar">
         <h1>Automate What Matters!</h1>
         <nav>
@@ -49,11 +49,6 @@
             </section>
         </section>
         <script src="scripts/main.js"></script>
-        <script>
-            $(function () {
-                updateVisitorCount();
-            })
-        </script>
     </main>
 
 <!--    <footer>©2022 Brian Sigurdson</footer>-->
