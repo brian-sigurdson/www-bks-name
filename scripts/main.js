@@ -1,4 +1,6 @@
+//
 // The following function makes an api call to get the value for the page counter.
+//
 function updateVisitorCount() {
     // this will call an api to get the visitor count value, but just output random for now.
     let visitorCountVal = Math.random();
