@@ -8,7 +8,9 @@ html, body {
 
 html {
     font-size: 10px;
-    background-color: #262626;
+    /*background-color: #262626;*/
+    /*background-color: #272727;*/
+    background-color: #000000;
 }
 
 body {
@@ -213,3 +215,38 @@ div#visitorCount {
     text-align: right;
     font-size: 1.25em;
 }
+
+/* ================================================================================================================== */
+/* tables */
+/* ================================================================================================================== */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+th {
+    font-weight: bold;
+    font-size: 2em;
+    /*color: #f5f0f2;*/
+    /*background-color: #704C5E;*/
+    /*background-color: #363946;*/
+
+    background-color: #9BAB9F;
+    color: black;
+}
+td {
+    text-align: left;
+    padding: 3px;
+    font-size: 1.75em;
+}
+
+thead th:nth-child(1) { width: 20% }
+thead th:nth-child(2) { width: 30% }
+thead th:nth-child(3) { width: 50% }
+/*tbody tr:nth-child(odd) { background-color: #eae1e6; }*/
+/*tbody tr:nth-child(even) { background-color: #d6c2cc; }*/
+tbody tr:nth-child(odd) { background-color: #f1f3f2; }
+tbody tr:nth-child(even) { background-color: #d5dcd7; }
