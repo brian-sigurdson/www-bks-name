@@ -254,3 +254,14 @@ thead th:nth-child(4) { width: 40% }
 /*tbody tr:nth-child(even) { background-color: #d6c2cc; }*/
 tbody tr:nth-child(odd) { background-color: #f1f3f2; }
 tbody tr:nth-child(even) { background-color: #d5dcd7; }
+
+/* ================================================================================================================== */
+/* Project pages */
+/* ================================================================================================================== */
+div.tech-used {
+    display: flex;
+    flex-direction: row;
+}
+div.tech-used-1 {
+    width: 50%;
+}
