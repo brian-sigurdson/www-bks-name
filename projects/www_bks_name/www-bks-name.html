@@ -6,8 +6,8 @@
     <meta name="author" content="Brian Sigurdson">
     <meta name="description" content="The personal web site project of Brian Sigurdson.">
 
-    <title>Project Template Page</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>www.bks.name</title>
+    <link rel="stylesheet" href="../../styles/style.css">
 
 </head>
 
@@ -16,11 +16,11 @@
         <h1 id="top">Automate What Matters!</h1>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../resume.html">Resume</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../certifications.html">Certifications</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../resume.html">Resume</a></li>
+                <li><a href="../../projects.html">Projects</a></li>
+                <li><a href="../../certifications.html">Certifications</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -43,15 +43,25 @@
         </aside>
 
         <section class="page-content">
-            <h2>Project_Name</h2>
+            <h2>www.bks.name</h2>
             <section>
                 <h3 id="description">Description</h3>
+                <p>This website is the project.</p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
+                    I took inspiration from <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">The Cloud Resume Challenge - AWS</a>
+                    while creating this website, but I didn't follow its requirements rigidly.  For example, I did not
+                    create in an HTML format of my resume, because I felt that the time would be better spent focusing
+                    on other skills like Terraform, Python, and Kubernetes.
+                </p>
+                <p>
+                    This is a serverless website hosted on AWS in an S3 bucket.  When a user connects, JavaScript
+                    connects to an AWS API Gateway, which forwards the request onto an AWS Lambda function, which
+                    updates the count in the DynamoDB database.  The updated count value is then returned to the
+                    browser.
+                </p>
+                <p>
+                    I will expand this site's functionality overtime, but for now it is just a convenient way for me
+                    to gather and present information about projects that I work on.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -61,22 +71,19 @@
                 <div class="tech-used">
                     <div class="tech-used-1">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>AWS Serverless</li>
+                            <li>AWS API Gateway</li>
+                            <li>AWS Lambda</li>
+                            <li>AWS DynamoDB</li>
+                            <li>AWS CodePipeline (CI/CD)</li>
                         </ul>
                     </div>
                     <div class="tech-used-1">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>Git/GitHub</li>
                         </ul>
                     </div>
                 </div>
@@ -86,11 +93,8 @@
             <section>
                 <h3 id="results">Results</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                    anim id est laborum.
+                    I now have a handy way to gather and present information on the personal development projects
+                    that I work on.  Although, all of my work is still kept in repositories.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -106,7 +110,7 @@
             <section>
                 <h3 id="diagram">Diagram</h3>
                 <p>
-                    A diagram is not relevant to this project.
+                    <img class="project-diagram" src="www-bks-name.svg" alt="A diagram of www.bks.name."
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -130,7 +134,7 @@
             <section>
                 <h3 id="code">Code</h3>
                 <p>
-                    The source code is not available for this project.
+                    The source code is available
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
