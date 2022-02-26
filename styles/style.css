@@ -245,6 +245,9 @@ td {
 td.page-link, td.table-title-td {
     text-align: center;
 }
+td.table-title-td {
+    font-weight: bold;
+}
 
 thead th:nth-child(1) { width: 12% }
 thead th:nth-child(2) { width: 33% }
