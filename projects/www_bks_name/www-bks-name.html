@@ -59,10 +59,14 @@
                     the type of assignment a person would receive at their job.
                 </p>
                 <p>
-                    Lastly, this is a serverless website hosted from an AWS S3 bucket.  When a user accesses the site,
+                    Additionally, this is a serverless website hosted from an AWS S3 bucket.  When a user accesses the site,
                     JavaScript connects to an AWS API Gateway.  The API Gateway forwards the request onto an AWS Lambda
                     function, which updates the count in the DynamoDB database.  The updated count value is then
                     returned to the browser.
+                </p>
+                <p>
+                    Lastly, this site's GitHub repository is monitored by an AWS CodePipeline job that automatically
+                    redeploys the site, when code updates occur.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
