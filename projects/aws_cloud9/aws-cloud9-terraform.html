@@ -6,7 +6,7 @@
     <meta name="author" content="Brian Sigurdson">
     <meta name="description" content="The personal web site project of Brian Sigurdson.">
 
-    <title>www.bks.name</title>
+    <title>Cloud9 - Terraform</title>
     <link rel="stylesheet" href="../../styles/style.css">
 
 </head>
@@ -43,15 +43,15 @@
         </aside>
 
         <section class="page-content">
-            <h2>www.bks.name</h2>
+            <h2>AWS Cloud9 IDE - Terraform</h2>
             <section>
                 <h3 id="description">Description</h3>
-                <p>This website is the project.</p>
                 <p>
-                    I took inspiration from <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">The Cloud Resume Challenge - AWS</a>
-                    while creating this website, but I didn't follow its requirements rigidly.  For example, I did not
-                    create in an HTML format of my resume, because I felt that the time would be better spent focusing
-                    on other skills like Terraform, Python, and Kubernetes.
+                    This project was originally described in
+                    <a href="https://cloudresumechallenge.dev/book/" target="_blank">The Cloud Resume Challenge Book</a>,
+                    using Cloudformation to create an AWS Cloud9 IDE, but I expanded it to use other technologies, such
+                    Terraform and Python / Boto3 (eventually Golang), for fun and for personal development.
+
                 </p>
                 <p>
                     What I liked about The Cloud Resume Challenge is that it only gave you the specifications for the
@@ -59,15 +59,6 @@
                     the type of assignment a person would receive at their job.
                 </p>
                 <p>
-                    Additionally, this is a serverless website hosted from an AWS S3 bucket.  When a user accesses the site,
-                    JavaScript connects to an AWS API Gateway.  The API Gateway forwards the request onto an AWS Lambda
-                    function, which updates the count in the DynamoDB database.  The updated count value is then
-                    returned to the browser.
-                </p>
-                <p>
-                    Lastly, this site's GitHub repository is monitored by an AWS CodePipeline job that automatically
-                    redeploys the site, when code updates occur.
-                </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
 
@@ -76,19 +67,8 @@
                 <div class="tech-used">
                     <div class="tech-used-1">
                         <ul>
-                            <li>AWS Serverless</li>
-                            <li>AWS API Gateway</li>
-                            <li>AWS Lambda</li>
-                            <li>AWS DynamoDB</li>
-                            <li>AWS CodePipeline (CI/CD)</li>
-                        </ul>
-                    </div>
-                    <div class="tech-used-1">
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Git/GitHub</li>
+                            <li>AWS Cloud9</li>
+                            <li>Terraform</li>
                         </ul>
                     </div>
                 </div>
@@ -98,8 +78,7 @@
             <section>
                 <h3 id="results">Results</h3>
                 <p>
-                    I now have a handy way to gather and present information on the personal development projects
-                    that I work on.  Although, all of my work is still kept in repositories.
+                    With an active AWS account, the user can spin up a browser based AWS Cloud9 IDE in about 1 minute.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -115,7 +94,7 @@
             <section>
                 <h3 id="diagram">Diagram</h3>
                 <p>
-                    <img class="project-diagram" src="www-bks-name.svg" alt="A diagram of www.bks.name."
+                    TODO:  Add diagram
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -123,7 +102,7 @@
             <section>
                 <h3 id="video">Video</h3>
                 <p>
-                    A video is not applicable for this project.
+                    TODO:  Add video
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -131,7 +110,21 @@
             <section>
                 <h3 id="images">Images</h3>
                 <p>
-                    Images are not applicable for this project.
+                    <img class="project-diagram" src="terraform-init.png"
+                         title="terraform init" alt="Terraform init image."
+                    >
+                    <img class="project-diagram" src="terraform-plan.png"
+                         title="terraform plan" alt="Terraform plan image."
+                    >
+                    <img class="project-diagram" src="terraform-apply.png"
+                         title="terraform apply" alt="Terraform apply image."
+                    >
+                    <img class="project-diagram" src="terraform-plan-output.png"
+                         title="terraform output" alt="Terraform output image."
+                    >
+                    <img class="project-diagram" src="terraform-c9-ide.png"
+                         title="Cloud9 IDE" alt="Terraform Cloud9 IDE image."
+                    >
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -139,7 +132,7 @@
             <section>
                 <h3 id="code">Code</h3>
                 <p>
-                    The source code is available <a href="https://github.com/brian-sigurdson/project-www-bks-name" target="_blank">here</a>.
+                    The source code is available <a href="https://github.com/brian-sigurdson/project-aws-cloud9" target="_blank">here</a>.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -147,14 +140,10 @@
             <section>
                 <h3 id="write-up">Write-up</h3>
                 <p>
-                    I will keep this short.  I learned a lot about HTML/CSS/JavaScript creating this website.  I learned
-                    more than I had expected, but it also felt good to learn about such widely used technologies that I knew
-                    very little about.
-                </p>
-                <p>
-                    I will expand this site's functionality overtime, especially its use of API Gateway, which I feel that
-                    I've only scratched the surface on so far.  For now this site is just a convenient way for me
-                    to gather and present information about projects that I work on.
+                    I will keep this short.  I learned a lot about Terraform to complete this project, and I have a lot
+                    more Terraform to learn.  I have found it to be a very productive tool for provisioning
+                    infrastructure.  I really like that it takes a uniform approach to provisioning multi-cloud resources,
+                    and I can't wait to start playing around with Azure and GPC as well.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
