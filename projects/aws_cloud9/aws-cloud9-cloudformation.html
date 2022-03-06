@@ -6,7 +6,7 @@
     <meta name="author" content="Brian Sigurdson">
     <meta name="description" content="The personal web site project of Brian Sigurdson.">
 
-    <title>Cloud9 - Terraform</title>
+    <title>Cloud9 - CloudFormation</title>
     <link rel="stylesheet" href="../../styles/style.css">
 
 </head>
@@ -43,13 +43,13 @@
         </aside>
 
         <section class="page-content">
-            <h2>AWS Cloud9 IDE - Terraform</h2>
+            <h2>AWS Cloud9 IDE - CloudFormation</h2>
             <section>
                 <h3 id="description">Description</h3>
                 <p>
                     This project was originally described in
                     <a href="https://cloudresumechallenge.dev/book/" target="_blank">The Cloud Resume Challenge Book</a>,
-                    using Cloudformation to create an AWS Cloud9 IDE, but I expanded it to use other technologies, such
+                    using CloudFormation to create an AWS Cloud9 IDE, but I expanded it to use other technologies, such
                     Terraform and Python / Boto3 (eventually Golang), for fun and for personal development.
 
                 </p>
@@ -68,7 +68,7 @@
                     <div class="tech-used-1">
                         <ul>
                             <li>AWS Cloud9</li>
-                            <li>Terraform</li>
+                            <li>AWS CloudFormation</li>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,24 @@
             <section>
                 <h3 id="1-click">1-Click Deployment</h3>
                 <p>
-                    A 1-click deployment is not applicable for this project.
+                    A 1-Click deployment is available for this project.  Although few resources are created with this
+                    deployment, the following prerequisites will help ensure that the deployment will work for you.
+                    <ul>
+                        <li>AWS account</li>
+                        <li>AWS user with administrative privileges</li>
+                        <li>AWS VPC with public subnets</li>
+                    </ul>
+                <p>
+                    The link below will take you to the AWS CloudFormation stack creation pages.  The stack creation
+                    pages will allow you to specify details related to the CloudFormation deployment.
+                </p>
+                <p>
+                    Presently, the deployment only offers modest configuration, as the current intent is to just
+                    illustrate basic CloudFormation skills and to compare CloudFormation to other forms of deployment
+                    like Terraform and Python.
+                </p>
+                <p>
+                    <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/new?stackName=test-stack&templateURL=https://name-bks-cloudformation-templates.s3.us-east-2.amazonaws.com/cloudformation/aws-cloud9-template.yaml" target="_blank">1-Click</a>
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
@@ -110,20 +127,17 @@
             <section>
                 <h3 id="images">Images</h3>
                 <p>
-                    <img class="project-diagram" src="terraform-init.png"
-                         title="terraform init" alt="Terraform init image."
+                    <img class="project-diagram" src="cloudformation-initial-screen.png"
+                         title="CloudFormation initial screen" alt="CloudFormation initial screen."
                     >
-                    <img class="project-diagram" src="terraform-plan.png"
-                         title="terraform plan" alt="Terraform plan image."
+                    <img class="project-diagram" src="cloudformation-specify-parameters.png"
+                         title="CloudFormation specify parameters" alt="CloudFormation specify parameters."
                     >
-                    <img class="project-diagram" src="terraform-apply.png"
-                         title="terraform apply" alt="Terraform apply image."
+                    <img class="project-diagram" src="cloudformation-output.png"
+                         title="CloudFormation output weblink" alt="CloudFormation output weblink."
                     >
-                    <img class="project-diagram" src="terraform-plan-output.png"
-                         title="terraform output" alt="Terraform output image."
-                    >
-                    <img class="project-diagram" src="terraform-c9-ide.png"
-                         title="Cloud9 IDE" alt="Terraform Cloud9 IDE image."
+                    <img class="project-diagram" src="cloudformation-ide.png"
+                         title="CloudFormation ide" alt="CloudFormation ide."
                     >
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
@@ -140,10 +154,15 @@
             <section>
                 <h3 id="write-up">Write-up</h3>
                 <p>
-                    I will keep this short.  I learned a lot about Terraform to complete this project, and I have a lot
-                    more Terraform to learn.  I have found it to be a very productive tool for provisioning
-                    infrastructure.  I really like that it takes a uniform approach to provisioning multi-cloud resources,
-                    and I can't wait to start playing around with Azure and GPC as well.
+                    I will keep this short.  I learned a lot about CloudFormation to complete this project, and I have a lot
+                    more CloudFormation to learn.  I have found it to be a very productive tool for provisioning
+                    infrastructure.
+                </p>
+                <p>
+                    Although, in my brief experience using Terraform to provision the same AWS Cloud9 resources,
+                    I think it seemed a lot easier to use and debug issues.  I felt a lot more productive using
+                    Terraform for such a small project.  Maybe that will change as I gain experience with both of
+                    these tools.
                 </p>
                 <p class="top-of-page"><a href="#top">top of page</a></p>
             </section>
